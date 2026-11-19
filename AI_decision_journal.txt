@@ -1,0 +1,52 @@
+
+AI DECISION JOURNAL
+
+Decision 1: Using an LLM
+
+Reason:
+Student complaints are written in informal language.
+An LLM can understand different ways of describing
+the same maintenance issue.
+
+Decision 2: JSON output
+
+Reason:
+JSON provides a structured response that Python
+can validate and process.
+
+Decision 3: Room validation using Python
+
+Reason:
+The LLM might generate an incorrect room number.
+Python independently checks the complaint text.
+
+Decision 4: Safety net
+
+Reason:
+A dangerous electrical complaint must not be missed.
+Python checks safety keywords and can increase urgency.
+
+Decision 5: Duplicate detection
+
+Reason:
+Repeated complaints should not create multiple
+maintenance tickets.
+
+Decision 6: Human oversight
+
+Reason:
+The warden is responsible for maintenance decisions.
+The system never automatically closes tickets.
+
+Decision 7: API fallback
+
+Reason:
+The application should continue safely when the
+API is unavailable or returns invalid JSON.
+Uncertain classifications are sent for manual review.
+
+Decision 8: API key security
+
+Reason:
+The API key is stored in an environment file
+and excluded from GitHub using .gitignore.

@@ -1,0 +1,25 @@
+HOSTEL FACILITIES SUMMARY
+=========================
+
+TICKETS BY TEAM
+Electrician: 2
+Facilities Office: 10
+IT Support: 1
+Plumber: 1
+
+TICKETS BY BLOCK
+Block A: 3
+Block B: 4
+Block C: 3
+Block D: 4
+
+ROOMS WITH REPEAT COMPLAINTS
+A105: 3 repeat complaints
+B214: 2 repeat complaints
+C310: 2 repeat complaints
+D220: 1 repeat complaints
+
+URGENT TICKETS
+T010 - C112 - Electrician
+T005 - A105 - Facilities Office
+T014 - D120 - Facilities Office

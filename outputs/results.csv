@@ -1,0 +1,23 @@
+id,room,issue,urgent,status,ticket
+H01,B214,other,False,new ticket,T004
+H02,A105,other,False,new ticket,T005
+H03,A105,other,True,duplicate,T005
+H04,B214,other,False,duplicate,T004
+H05,C310,other,False,new ticket,T006
+H06,D115,other,False,new ticket,T007
+H07,A105,other,False,duplicate,T005
+H08,C310,other,False,duplicate,T006
+H09,D220,other,False,new ticket,T008
+H10,B108,other,False,new ticket,T009
+H11,,other,False,needs more info,
+H12,C112,electrical,True,new ticket,T010
+H13,A105,other,False,duplicate,T005
+H14,D210,other,False,new ticket,T011
+H15,C310,other,False,duplicate,T006
+H16,B110,other,False,new ticket,T012
+H17,A210,other,False,new ticket,T013
+H18,D120,other,True,new ticket,T014
+H19,D220,other,False,duplicate,T008
+H20,B214,other,False,duplicate,T004
+H21,,other,True,needs more info,
+H22,,other,False,needs more info,

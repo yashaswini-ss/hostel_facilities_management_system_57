@@ -1,0 +1,57 @@
+
+
+Your example contains 22 complaints.
+
+Measurement
+	
+
+Estimated value
+
+Complaints per day
+	
+
+22
+
+API calls per complaint
+	
+
+1
+
+Total API calls
+	
+
+22
+
+Approximate response time per call
+	
+
+1–5 seconds
+
+Sequential processing time
+	
+
+22–110 seconds
+
+These response times are planning estimates, not guaranteed measurements. Actual performance depends on API availability, network speed and model load.
+
+Estimated API cost
+
+For illustration, assume each complaint uses:
+
+    500 input tokens.
+
+    100 output tokens.
+
+For 22 complaints:
+
+    Input: 11,000 tokens.
+
+    Output: 2,200 tokens.
+
+Use this formula:
+Daily cost=11,000×Pin1,000,000+2,200×Pout1,000,000
+Daily cost=1,000,00011,000×Pin​​+1,000,0002,200×Pout​​
+
+Here, Pin
+Pin​ and Pout
+Pout​ are the current model prices per million input and output tokens.

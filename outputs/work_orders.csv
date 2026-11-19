@@ -1,0 +1,15 @@
+ticket,room,issue,team,urgent,opened,due_date,complaint_ids,summaries
+T010,C112,electrical,Electrician,True,2026-10-09,2026-10-09,H12,Requires manual classification
+T005,A105,other,Facilities Office,True,2026-10-08,2026-10-09,H02; H03; H07; H13,Requires manual classification; Requires manual classification; Requires manual classification; Requires manual classification
+T014,D120,other,Facilities Office,True,2026-10-09,2026-10-09,H18,Requires manual classification
+T002,B214,electrical,Electrician,False,2026-10-06,,,
+T004,B214,other,Facilities Office,False,2026-10-08,2026-10-10,H01; H04; H20,Requires manual classification; Requires manual classification; Requires manual classification
+T006,C310,other,Facilities Office,False,2026-10-08,2026-10-10,H05; H08; H15,Requires manual classification; Requires manual classification; Requires manual classification
+T007,D115,other,Facilities Office,False,2026-10-08,2026-10-10,H06,Requires manual classification
+T008,D220,other,Facilities Office,False,2026-10-08,2026-10-10,H09; H19,Requires manual classification; Requires manual classification
+T009,B108,other,Facilities Office,False,2026-10-08,2026-10-10,H10,Requires manual classification
+T011,D210,other,Facilities Office,False,2026-10-09,2026-10-11,H14,Requires manual classification
+T012,B110,other,Facilities Office,False,2026-10-09,2026-10-11,H16,Requires manual classification
+T013,A210,other,Facilities Office,False,2026-10-09,2026-10-11,H17,Requires manual classification
+T001,C310,internet,IT Support,False,2026-10-05,,,
+T003,A105,plumbing,Plumber,False,2026-10-07,,,

@@ -1,0 +1,104 @@
+
+PROJECT SPECIFICATION
+
+Project Title:
+Hostel Facilities Complaint Management System
+
+Domain:
+Facilities Management
+
+1. PROBLEM STATEMENT
+
+The hostel office receives many maintenance complaints
+every day. Repeated complaints create duplicate work
+orders. Urgent electrical problems may be missed when
+they are mixed with ordinary complaints.
+
+2. INPUT FILES
+
+complaints.csv:
+Contains complaint ID, date and student complaint.
+
+open_tickets.csv:
+Contains tickets that are already open.
+
+3. LLM CLASSIFICATION
+
+The LLM extracts:
+- Room number
+- Issue category
+- Urgency
+- Short summary
+
+The response must be valid JSON.
+
+4. ROOM VALIDATION
+
+A valid room contains:
+- Block A, B, C or D
+- Floor 1, 2, 3 or 4
+- Room number 01 to 20
+
+The room must be explicitly written in the complaint.
+Invalid or missing rooms are sent for more information.
+
+5. URGENCY RULE
+
+Urgent complaints include:
+- Sparks
+- Burning smell
+- Electric shock
+- Water near electrical fittings
+- Flooding
+
+Python applies an additional safety check.
+Python never reduces urgency assigned by the LLM.
+
+6. TEAM ROUTING
+
+Electrical - Electrician
+Plumbing - Plumber
+Carpentry - Carpenter
+Cleaning - Housekeeping
+Internet - IT Support
+Other - Facilities Office
+
+7. DUPLICATE DETECTION
+
+The system uses a dictionary with (room, issue)
+as its key.
+
+If the same room and issue already has an open
+ticket, the new complaint joins that ticket.
+
+8. DUE DATE
+
+Urgent tickets: Same day.
+Normal tickets: Within two days.
+
+Python datetime and timedelta calculate due dates.
+
+9. OUTPUT FILES
+
+work_orders.csv
+results.csv
+needs_info.csv
+summary.txt
+
+10. HUMAN CHECKPOINT
+
+The warden reads every urgent ticket and assigns
+and closes all maintenance work.
+
+The system never closes tickets automatically.
+
+11. EDGE CASES
+
+- Missing room number
+- Invalid room number
+- Invalid JSON
+- API failure
+- Duplicate complaints
+- Multiple urgent complaints
+- Water near electrical fittings
+- URGENT written in capital letters
