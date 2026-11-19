@@ -6,6 +6,23 @@ import main
 
 
 class ComplaintTests(unittest.TestCase):
+    def test_safety_net_water_near_switch(self):
+
+        complaint = "Water overflowing near the electrical switch in C112"
+
+        data = {
+            "room": "C112",
+            "issue": "plumbing",
+            "urgent": False,
+            "summary": "Water overflowing"
+        }
+
+        result = main.apply_safety_net(complaint, data)
+
+        self.assertTrue(result["urgent"])
+        self.assertEqual(result["issue"], "electrical")
+
+        print("PASS: Water near electrical switch is urgent")
 
     def test_evaluation(self):
 
