@@ -84,7 +84,7 @@ of the API key.
 
 ## Author
 
-Your Name
+Yashaswini S.S
 
 ## Project
 
